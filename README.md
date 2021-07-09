@@ -42,4 +42,19 @@ def on_forever():
     serial.write_line("Test: " + ("" + str(input.sound_level())))
     serial.write_line("END")
     basic.pause(100)
-basic.forever(on_forever)```
+basic.forever(on_forever)
+```
+
+This `"END"` Line is most important to be last one of all of them
+This must be in LOOP
+
+#### Timing and configuration
+In Micro:bit script, there must be a timeout after sending `"END"` line
+This timeout is in MS
+1 000 MS = 1S
+
+### in Main.py, line 8 and 9
+`HowManyVariablesIncoming = 7` How many lines is incoming in one loop before `"END"`
+`refreshTime = 0.1` How long is timeout setted in Micro:bit
+
+If you got any Issue, open an Issue, i'll fix it
