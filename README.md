@@ -40,7 +40,6 @@ def on_forever():
     serial.write_line("LightLevel: " + ("" + str(input.light_level())))
     serial.write_line("SoundLevel: " + ("" + str(input.sound_level())))
     serial.write_line("Test: " + ("" + str(input.sound_level())))
-+ (input.sound_level() + input.sound_level()))))))
     serial.write_line("END")
     basic.pause(100)
 basic.forever(on_forever)```
