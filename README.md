@@ -39,7 +39,8 @@ def on_forever():
     serial.write_line("TEMP: " + ("" + str(input.temperature())))
     serial.write_line("LightLevel: " + ("" + str(input.light_level())))
     serial.write_line("SoundLevel: " + ("" + str(input.sound_level())))
-    serial.write_line("Test: " + ("" + str((input.acceleration(Dimension.X) + input.acceleration(Dimension.Y) + input.acceleration(Dimension.Z) + (input.temperature() + (input.sound_level() + input.sound_level()))))))
+    serial.write_line("Test: " + ("" + str(input.sound_level())))
++ (input.sound_level() + input.sound_level()))))))
     serial.write_line("END")
     basic.pause(100)
 basic.forever(on_forever)```
