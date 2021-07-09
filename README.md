@@ -31,7 +31,7 @@ In `BBC_Codes` Folder, is .hex code for Micro:bit and source code in python
 This script is adjustable for as many lines of data as you need
 You must loop them like this
 
-`
+```
 def on_forever():
     serial.write_line("xAXIS: " + ("" + str(input.acceleration(Dimension.X))))
     serial.write_line("yAXIS: " + ("" + str(input.acceleration(Dimension.Y))))
@@ -42,4 +42,4 @@ def on_forever():
     serial.write_line("Test: " + ("" + str((input.acceleration(Dimension.X) + input.acceleration(Dimension.Y) + input.acceleration(Dimension.Z) + (input.temperature() + (input.sound_level() + input.sound_level()))))))
     serial.write_line("END")
     basic.pause(100)
-basic.forever(on_forever)`
+basic.forever(on_forever)```
