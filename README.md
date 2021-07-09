@@ -29,7 +29,7 @@ or you can click link in your terminal
 ### Setting up BBC Micro:bit
 In `BBC_Codes` Folder, is .hex code for Micro:bit and source code in python  
 This script is adjustable for as many lines of data as you need  
-You must loop them like this
+You must loop them like this:
 
 ```
 def on_forever():
