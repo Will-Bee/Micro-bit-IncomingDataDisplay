@@ -48,12 +48,12 @@ basic.forever(on_forever)
 This `"END"` Line is most important to be last one of all of them
 This must be in LOOP
 
-#### Timing and configuration
+### Timing and configuration
 In Micro:bit script, there must be a timeout after sending `"END"` line
 This timeout is in MS
 1 000 MS = 1S
 
-### in Main.py, line 8 and 9
+#### in Main.py, line 8 and 9
 `HowManyVariablesIncoming = 7` How many lines is incoming in one loop before `"END"`
 `refreshTime = 0.1` How long is timeout setted in Micro:bit
 
