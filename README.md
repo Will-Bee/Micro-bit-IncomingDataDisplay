@@ -13,22 +13,20 @@ pip install flask pyserial
 ### Setting up local server
 
 ```
-C:\Users\Admin> python Main.py
+$ python Main.py
 [-]: Aviable serial ports:
 [Com1, Com7, ...]
 Enter ID:
 ```
 
-You will enter witch port is your micro:bit,  
-for example, if your m:b is Com7, you enter number 2 bcs it is displayed on second place
+You have to enter witch Com. you want to use, starting from 1
 
-Then, local server will start on IP `127.0.0.1:5000`  
-or you can click link in your terminal
+Then, local server will start, usually at `127.0.0.1:5000`
 
 ### Setting up BBC Micro:bit
-In `BBC_Codes` Folder, is .hex code for Micro:bit and source code in python  
+In `BBC_Codes` Folder is a .hex file for Micro:bit and source code in python  
 This script is adjustable for as many lines of data as you need  
-You must loop them like this:
+You have to loop them like this:
 
 ```
 def on_forever():
@@ -44,16 +42,14 @@ def on_forever():
 basic.forever(on_forever)
 ```
 
-This `"END"` Line is most important to be last one of all of them  
-This must be in LOOP
+This `"END"` line is most important to be last one
+This have to be in LOOP
 
 ### Timing and configuration
-In Micro:bit script, there must be a timeout after sending `"END"` line  
-This timeout is in MS  
-1 000 MS = 1S
+In Micro:bit script, there has be a timeout after sending `"END"` line  
+
+*1 000 MS = 1S
 
 #### in Main.py, line 8 and 9
 `HowManyVariablesIncoming = 7` How many lines is incoming in one loop before `"END"`  
-`refreshTime = 0.1` How long is timeout setted in Micro:bit
-
-If you got any Issue, open an Issue, i'll fix it
+`refreshTime = 0.1` Your timeout
