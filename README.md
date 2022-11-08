@@ -5,8 +5,7 @@
 pip uninstall serial
 pip install flask pyserial
 ```
-It's bcs python have build-in library  
-called serial that works differently
+*Pre-installed library "serial" works differently
 
 
 # Usage
